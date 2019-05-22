@@ -1,0 +1,26 @@
+@import '../../styles/main';
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1;    // making 1st column to grow & shrink
+  // flex: 0 1; // making 1st column small (to shrink only)
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: $default-font-size;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-column-gap: 5rem;
+  padding: 1rem;
+  @include solidBorder(1px, $black);
+  border-bottom: 0px;
+
+  &-field{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    @include solidBorder(1px, $black);
+  }
+}

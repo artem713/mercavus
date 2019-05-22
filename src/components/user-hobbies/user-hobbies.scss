@@ -1,0 +1,26 @@
+@import '../../styles/main';
+
+.container {
+  flex: 1 1;
+  margin-right: 1rem;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  font-size: $default-font-size;
+  
+  &-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+    padding: 1rem;
+  }
+}
+
+.input-container {
+  padding: 1rem;
+  @include solidBorder(1px, $black);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 5rem;
+  grid-column-gap: 5rem;
+}
